@@ -6,15 +6,17 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 16:52:03 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/15 16:52:06 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/17 18:08:22 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memmove(void *d, const void *s, unsigned long n)
+#include "libft.h"
+
+void	*ft_memmove(void *d, const void *s, t_s n)
 {
 	const char		*sptr;
 	char			*dptr;
-	unsigned long	i;
+	t_s				i;
 
 	sptr = s;
 	dptr = d;

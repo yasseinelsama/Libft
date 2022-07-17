@@ -1,33 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/15 19:09:03 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/17 18:09:27 by ymohamed         ###   ########.fr       */
+/*   Created: 2022/07/17 17:49:41 by ymohamed          #+#    #+#             */
+/*   Updated: 2022/07/17 18:13:30 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_s	ft_strlcpy(char *d, const char *s, t_s k)
+char	*ft_strnstr(const char *haystack, const char *needle, t_s len)
 {
-	t_s	i;
-	t_s	m;
+	char	*hsp;
+	char	*nep;
+	t_s		i;
+	t_s		m;
+	t_s		nl;
 
+	hsp = (char *)haystack;
+	nep = (char *)needle;
 	i = 0;
-	m = 0;
-	while (s[i] != '\0')
-		i++;
-	if (k == 0)
-		return (i);
-	while (m < (k -1) & s[m] != '\0')
+	if (nep[0] == '\0')
+		return (&hsp[0]);
+	nl = ft_strlen(needle);
+	while (hsp[i] != '\0' && i < len)
 	{
-		d[m] = s[m];
-		m++;
+		m = 0;
+		if (hsp[i] == nep[m])
+		{
+			while (m < nl && hsp[i + m] == nep[m] && m + i < len)
+				m++;
+			if (m == nl)
+				return (&hsp[i]);
+		}
+		i++;
 	}
-	d[m] = '\0';
-	return (i);
+	return (0);
 }

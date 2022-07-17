@@ -6,13 +6,13 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 17:14:56 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/14 19:08:53 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/16 22:31:01 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
-	if (c > 47 & c < 58)
+	if (c > 47 && c < 58)
 		return (1);
 	else
 		return (0);

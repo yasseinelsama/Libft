@@ -6,16 +6,20 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 18:03:35 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/14 19:07:55 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/17 18:04:42 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
-{
-	int	c;
+#include "libft.h"
 
+t_s	ft_strlen(const char *s)
+{
+	char	*ptr;
+	int		c;
+
+	ptr = (char *)s;
 	c = 0;
-	while (str[c] != '\0')
+	while (ptr[c] != '\0')
 	{
 		c++;
 	}

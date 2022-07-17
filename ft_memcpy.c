@@ -6,15 +6,17 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 16:14:03 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/15 16:54:07 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/17 18:07:46 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memcpy(void *restrict d, const void *restrict s, unsigned long n)
+#include "libft.h"
+
+void	*ft_memcpy(void *d, const void *s, t_s n)
 {
-	const char	*restrict		sptr;
-	char	*restrict			dptr;
-	unsigned long				i;
+	const char	*sptr;
+	char		*dptr;
+	t_s			i;
 
 	sptr = s;
 	dptr = d;

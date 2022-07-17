@@ -5,42 +5,27 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/30 16:41:01 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/06/01 19:48:41 by ymohamed         ###   ########.fr       */
+/*   Created: 2022/07/17 14:53:46 by ymohamed          #+#    #+#             */
+/*   Updated: 2022/07/17 18:11:05 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n);
+#include "libft.h"
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+int	ft_strncmp(const char *s1, const char *s2, t_s n)
 {
-	unsigned int	c;
-	unsigned int	ret;
+	char	*c1;
+	char	*c2;
+	t_s		i;
 
-	c = 0;
-	ret = 0;
-	while ((s1[c] != '\0') && (c < (n -1)) && n != 0)
+	c1 = (char *)s1;
+	c2 = (char *)s2;
+	i = 0;
+	while (i < n - 1 && c1[i] != '\0')
 	{
-		if (s1[c] != s2[c])
-		{
-			ret = s1[c] - s2[c];
-			break ;
-		}
-		c++;
+		if (c1[i] != c2[i])
+			return (c1[i] - c2[i]);
+		i++;
 	}
-	if (s1[c] != s2[c] && n != 0)
-		ret = s1[c] - s2[c];
-	return (ret);
+	return (c1[i] - c2[i]);
 }
-/*
-int main()
-{
-	char	s1[] = "hi at school";
-	char	s2[] = "hi at school there";
-	unsigned int	n;
-	unsigned int	m;
-
-	n = 13;
-	m = ft_strncmp(s1 ,s2, n);
-	printf("%d\n", m);
-}*/

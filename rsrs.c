@@ -40,3 +40,41 @@ int main ()
    printf("\n The out come is %lu", n);
    return(0);
 }
+
+int main () 
+{
+   char	fst[25];
+   strcpy(fst,"Ysel");
+   char sec[] = "123456789abcdef!@#$";
+   unsigned long	n;
+//     for (int i = 0; i < 30; i++)
+//    {
+// 	printf("%c", fst[i]);
+//    }
+//    printf("\n");
+   n = ft_strlcat(fst,sec,25);
+//strcpy(str,"This is string.h library function");
+//    for (int i = 0; i < 30; i++)
+//    {
+// 	printf("%c", dst[i]);
+//    }
+	puts(fst);
+	printf("The out come is %lu", n);
+	return(0);
+}
+
+#include <ctype.h>
+#include <stdio.h>
+int	ft_toupper(int c)
+{
+	if (c > 96 && c < 123)
+		c = c - 32;
+	return (c);
+}
+
+int main(void)
+{
+	printf("%c\n", toupper('$'));
+	printf("%c\n",ft_toupper('$'));
+	return (0);
+}

@@ -6,13 +6,13 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 18:50:24 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/14 18:51:07 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/16 22:31:27 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int c)
 {
-	if (c >= 0 & c < 128)
+	if (c >= 0 && c < 128)
 		return (1);
 	else
 		return (0);

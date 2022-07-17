@@ -1,19 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/14 19:05:07 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/16 22:31:35 by ymohamed         ###   ########.fr       */
+/*   Created: 2022/07/17 17:48:28 by ymohamed          #+#    #+#             */
+/*   Updated: 2022/07/17 18:14:08 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include "libft.h"
+
+int	ft_memcmp(const void *s1, const void *s2, t_s n)
 {
-	if (c > 31 && c < 127)
-		return (1);
-	else
+	char	*ps1;
+	char	*ps2;
+	t_s		i;
+
+	ps1 = (char *)s1;
+	ps2 = (char *)s2;
+	i = 0;
+	if (n == 0)
 		return (0);
+	while (i < n - 1)
+	{
+		if (ps1[i] != ps2[i])
+			return (ps1[i] - ps2[i]);
+		i++;
+	}
+	return (ps1[i] - ps2[i]);
 }

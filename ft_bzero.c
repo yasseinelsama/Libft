@@ -6,11 +6,13 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 14:01:35 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/15 14:03:44 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/17 18:07:03 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bzero(void *s, unsigned long n)
+#include "libft.h"
+
+void	ft_bzero(void *s, t_s n)
 {
 	char			*ptr;
 	unsigned long	i;
