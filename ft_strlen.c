@@ -6,13 +6,13 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 18:03:35 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/17 18:04:42 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/19 11:41:16 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_s	ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	char	*ptr;
 	int		c;

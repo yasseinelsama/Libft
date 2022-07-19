@@ -6,9 +6,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
 
-# Make data base, printed on Sun Jul 17 10:12:36 2022
+# Make data base, printed on Tue Jul 19 18:33:33 2022
 
 # Variables
 
@@ -16,6 +15,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
+ 
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -23,7 +23,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/ymohamed/Desktop/Libft
+CURDIR := /Users/ymohamed/Desktop/c/Libft
 # makefile
 SHELL = /bin/sh
 # environment
@@ -41,11 +41,11 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.MlvwYZpay9/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ExjTILvR06/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-PWD = /Users/ymohamed/Desktop/Libft
+PWD = /Users/ymohamed/Desktop/c/Libft
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
@@ -59,7 +59,7 @@ VSCODE_CODE_CACHE_PATH = /Users/ymohamed/Library/Application Support/Code/Cached
 # environment
 LOGNAME = ymohamed
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -125,9 +125,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 14729
+VSCODE_PID = 1831
 # variable set hash-table stats:
-# Load=57/1024=6%, Rehash=0, Collisions=1/86=1%
+# Load=57/1024=6%, Rehash=0, Collisions=1/83=1%
 
 # Pattern-specific Variable Values
 
@@ -135,9 +135,9 @@ VSCODE_PID = 14729
 
 # Directories
 
-# . (device 16777225, inode 490166): 31 files, no impossibilities.
+# . (device 16777225, inode 506828): 54 files, no impossibilities.
 
-# 31 files, no impossibilities in 1 directories.
+# 54 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -150,9 +150,9 @@ all: libft.a
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
+#  Successfully updated.
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 .SUFFIXES:
@@ -171,28 +171,9 @@ Makefile:
 
 libft.a:
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: `'
-#  File does not exist.
+#  Last modified 2022-07-19 18:32:56
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := libft.a
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := 
-# automatic
-# | := 
-# automatic
-# < := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  Successfully updated.
 #  commands to execute (from `Makefile', line 8):
 	gcc -Wall -Wextra -Werror -c ft_*.c
 	ar rc $(NAME) *.o
@@ -236,7 +217,7 @@ clean:
 	
 
 # files hash-table stats:
-# Load=9/1024=1%, Rehash=0, Collisions=0/27=0%
+# Load=9/1024=1%, Rehash=0, Collisions=0/26=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -248,6 +229,6 @@ clean:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sun Jul 17 10:12:36 2022
+# Finished Make data base on Tue Jul 19 18:33:33 2022
 
  

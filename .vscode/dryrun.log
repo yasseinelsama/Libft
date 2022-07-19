@@ -1,6 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/ymohamed/Desktop/Libft'
+make: Entering directory `/Users/ymohamed/Desktop/c/Libft'
 gcc -Wall -Wextra -Werror -c ft_*.c
 ar rc libft.a *.o
-make: Leaving directory `/Users/ymohamed/Desktop/Libft'
+make: Leaving directory `/Users/ymohamed/Desktop/c/Libft'
  

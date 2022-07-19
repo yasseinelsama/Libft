@@ -6,18 +6,20 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 16:14:03 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/17 18:07:46 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/19 21:16:50 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *d, const void *s, t_s n)
+void	*ft_memcpy(void *d, const void *s, size_t n)
 {
 	const char	*sptr;
 	char		*dptr;
-	t_s			i;
+	size_t		i;
 
+	if (!(d || s))
+		return (0);
 	sptr = s;
 	dptr = d;
 	i = 0;

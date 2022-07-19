@@ -6,16 +6,16 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 19:09:03 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/17 18:09:27 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/19 11:41:04 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_s	ft_strlcpy(char *d, const char *s, t_s k)
+size_t	ft_strlcpy(char *d, const char *s, size_t k)
 {
-	t_s	i;
-	t_s	m;
+	size_t	i;
+	size_t	m;
 
 	i = 0;
 	m = 0;
