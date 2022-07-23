@@ -7,6 +7,8 @@ char *ft_strtrim(char const *s1, char const *set)
 	char	*sp;
 	int		l;
 
+	if (!s1)
+		return (0);
 	while (s1[0] && ft_strchr(set, s1[0]))
 	{
 		s1++;

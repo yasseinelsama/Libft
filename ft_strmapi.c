@@ -7,6 +7,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	i;
 	unsigned int	l;
 
+	if (!s)
+		return (0);
 	l = ft_strlen(s);
 	i = 0;
 	p = malloc(sizeof(char) * (l + 1));

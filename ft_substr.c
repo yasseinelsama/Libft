@@ -6,7 +6,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*sp;
 	size_t	i;
 	size_t	sl;
-	
+
+	if (!s)
+		return(0);
 	rp = malloc(sizeof(char) * len + 1);
 	if (rp == 0)
 		return (0);
