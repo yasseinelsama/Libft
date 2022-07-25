@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/07/25 13:51:50 by ymohamed          #+#    #+#             */
+/*   Updated: 2022/07/25 14:01:56 by ymohamed         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
@@ -21,6 +32,7 @@ char	*split_strings(const char *s, char c)
 	word[i] = '\0';
 	return (word);
 }
+
 int	count_strings(char const *s, char c)
 {
 	int	i;
@@ -36,6 +48,7 @@ int	count_strings(char const *s, char c)
 	}
 	return (words);
 }
+
 char	**ft_split(char const *s, char c)
 {
 	char	**p;
