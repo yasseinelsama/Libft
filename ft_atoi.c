@@ -6,11 +6,11 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 23:30:18 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/25 13:57:34 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/25 17:50:32 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	calcu(int *nb, int *md, int *i, char *str);
+static void	calcu(int *nb, int *md, int *i, char *str);
 
 int	ft_atoi(char *str)
 {
@@ -39,7 +39,7 @@ int	ft_atoi(char *str)
 	return (nb * sn);
 }
 
-void	calcu(int *nb, int *md, int *i, char *str)
+static void	calcu(int *nb, int *md, int *i, char *str)
 {
 	while (str[*i] >= '0' && str[*i] <= '9' && *md < 20)
 	{

@@ -6,13 +6,13 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 13:51:02 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/25 17:41:04 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/25 17:51:19 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	pnum(char *r, long int nb, long int digs)
+static void	pnum(char *r, long int nb, long int digs)
 {
 	if (nb == 0)
 		r[0] = '0';

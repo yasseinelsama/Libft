@@ -6,13 +6,13 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 13:51:50 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/25 14:01:56 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/25 17:55:30 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*split_strings(const char *s, char c)
+static char	*split_strings(const char *s, char c)
 {
 	char	*word;
 	int		i;
@@ -33,7 +33,7 @@ char	*split_strings(const char *s, char c)
 	return (word);
 }
 
-int	count_strings(char const *s, char c)
+static int	count_strings(char const *s, char c)
 {
 	int	i;
 	int	words;
