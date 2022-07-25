@@ -6,7 +6,7 @@
 #    By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/25 13:53:10 by ymohamed          #+#    #+#              #
-#    Updated: 2022/07/25 13:53:19 by ymohamed         ###   ########.fr        #
+#    Updated: 2022/07/25 15:17:05 by ymohamed         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,4 +29,4 @@ re: fclean all
 test:
 	gcc -Wall -Werror -Wextra 2.c -o out
 	./out
-	/bin/rm -f out
+	/bin/rm -f out 
