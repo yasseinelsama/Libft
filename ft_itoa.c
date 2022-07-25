@@ -6,7 +6,7 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 13:51:02 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/25 14:00:13 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/25 17:41:04 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_itoa(int n)
 	long int	i;
 	long int	num;
 
-	digs = 1;
+	digs = 0;
 	i = n;
 	num = n;
 	while (i != 0)
@@ -44,7 +44,7 @@ char	*ft_itoa(int n)
 		i = i / 10;
 		digs++;
 	}
-	if (n < 0)
+	if (n <= 0)
 		digs++;
 	r = malloc(sizeof(char) * (digs + 1));
 	if (r == 0)
