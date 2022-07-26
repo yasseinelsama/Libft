@@ -6,7 +6,7 @@
 #    By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/25 13:53:10 by ymohamed          #+#    #+#              #
-#    Updated: 2022/07/25 17:07:24 by ymohamed         ###   ########.fr        #
+#    Updated: 2022/07/27 00:40:45 by ymohamed         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,16 +19,25 @@ SOURCES = \
 		ft_strrchr.c ft_toupper.c ft_calloc.c ft_isdigit.c ft_memcmp.c ft_putchar_fd.c ft_split.c ft_strjoin.c \
 		ft_strmapi.c ft_strtrim.c
 
+SOURCESB = \
+		ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c
+
 OBJECTS = $(SOURCES:%.c=%.o)
+
+OBJECTSB = $(SOURCESB:%.c=%.o)
 
 all: $(NAME)
 
 $(NAME):
-	gcc -Wall -Wextra -Werror -c $(SOURCES)
-	ar rc $(NAME) $(OBJECTS)
+	gcc -Wall -Wextra -Werror -c $(SOURCES) $(SOURCESB)
+	ar rc $(NAME) $(OBJECTS) $(OBJECTSB)
+	
+bonus:
+	gcc -Wall -Wextra -Werror -c $(SOURCESB)
+	ar rc $(NAME) $(OBJECTSB)
 
 clean:
-	/bin/rm -f $(OBJECTS)
+	/bin/rm -f $(OBJECTS) $(OBJECTSB)
 
 fclean: clean
 	/bin/rm -f $(NAME)
