@@ -1,6 +1,0 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory `/Users/ymohamed/Desktop/c/Libft'
-make: Nothing to be done for `all'.
- 
-make: Leaving directory `/Users/ymohamed/Desktop/c/Libft'
- 
