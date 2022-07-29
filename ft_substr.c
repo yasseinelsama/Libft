@@ -6,7 +6,7 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 13:52:56 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/25 14:04:54 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/29 04:46:34 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (0);
-	rp = malloc(sizeof(char) * len + 1);
+	rp = malloc(sizeof(char) * (len + 1));
 	if (rp == 0)
 		return (0);
 	sp = (char *)s;

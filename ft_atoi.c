@@ -6,32 +6,34 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 23:30:18 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/29 02:18:35 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/29 03:10:14 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-static void	calcu(int *nb, int *md, int *i, char *str);
+static void	calcu(int *nb, int *md, int *i, char *ptr);
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
-	int	i;
-	int	sn;
-	int	nb;
-	int	md;
+	char	*ptr;
+	int		i;
+	int		sn;
+	int		nb;
+	int		md;
 
+	ptr = (char *)str;
 	i = 0;
 	sn = 1;
 	nb = 0;
 	md = 0;
-	while (str[i] == ' ' || (str[i] > 8 && str[i] < 14))
+	while (ptr[i] == ' ' || (ptr[i] > 8 && ptr[i] < 14))
 		i++;
-	if (str[i] == '-' || str[i] == '+')
+	if (ptr[i] == '-' || ptr[i] == '+')
 	{
-		if (str[i] == '-')
+		if (ptr[i] == '-')
 			sn = sn * -1;
 		i++;
 	}
-	calcu(&nb, &md, &i, str);
+	calcu(&nb, &md, &i, ptr);
 	if (md >= 19 && sn < 0)
 		return (0);
 	else if (md >= 19 && sn > 0)
@@ -39,11 +41,11 @@ int	ft_atoi(char *str)
 	return (nb * sn);
 }
 
-static void	calcu(int *nb, int *md, int *i, char *str)
+static void	calcu(int *nb, int *md, int *i, char *ptr)
 {
-	while (str[*i] >= '0' && str[*i] <= '9' && *md < 20)
+	while (ptr[*i] >= '0' && ptr[*i] <= '9' && *md < 20)
 	{
-		*nb = *nb * 10 + (str[*i] - 48);
+		*nb = *nb * 10 + (ptr[*i] - 48);
 		*md = *md + 1;
 		*i = *i + 1;
 	}

@@ -6,7 +6,7 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 14:01:35 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/19 11:35:30 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/29 04:03:07 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char			*ptr;
+	unsigned char	*ptr;
 	unsigned long	i;
 
 	ptr = s;
 	i = 0;
 	while (i < n)
 	{
-		ptr[i] = '\0';
+		ptr[i] = 0;
 		i++;
 	}
 }
