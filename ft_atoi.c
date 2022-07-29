@@ -6,13 +6,11 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 23:30:18 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/29 16:30:01 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/29 22:38:53 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 static void	calcu(int *nb, int *md, int *i, char *ptr);
 
@@ -74,6 +72,6 @@ static void	calcu(int *nb, int *md, int *i, char *ptr)
 // int	main(void)
 // {
 // 	printf("%d\n", ft_atoi("-9223372036854775808")); //9223372036854775807
-// 	printf("%d\n", atoi("-9223372036854775808"));
+// 	printf("%d\n", atoi("-9223372036854775808")); // SIZE_MAX
 // 	return (0);
 // }

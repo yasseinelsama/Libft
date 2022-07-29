@@ -6,7 +6,7 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 16:07:33 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/29 03:04:18 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/30 00:30:44 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *d, const void *s, size_t n);
 void	*ft_memmove(void *d, const void *s, size_t n);
 size_t	ft_strlcpy(char *d, const char *s, size_t k);
-size_t	ft_strlcat(char *dst, const char *src, size_t dsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
