@@ -6,7 +6,7 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 13:51:40 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/25 14:06:25 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/30 04:26:54 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putstr_fd(char *s, int fd)
 	unsigned int	l;
 	unsigned int	i;
 
+	if (!s || !fd)
+		return ;
 	l = ft_strlen(s);
 	i = 0;
 	while (i < l)
