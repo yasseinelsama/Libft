@@ -6,7 +6,7 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 13:51:50 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/25 17:55:30 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/30 14:31:44 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ static char	*split_strings(const char *s, char c)
 	i = 0;
 	while (s[i] && s[i] != c)
 		i++;
-	word = (char *)malloc(sizeof(char) * (i + 1));
+	word = malloc(sizeof(char) * (i + 1));
 	if (!word)
 		return (0);
 	i = 0;
-	while (s[i] && s[i] != c)
+	while (s[i] != '\0' && s[i] != c)
 	{
 		word[i] = s[i];
 		i++;
@@ -58,7 +58,7 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (0);
 	words = count_strings(s, c);
-	p = (char **)malloc(sizeof(char *) * (words + 1));
+	p = malloc(sizeof(char *) * (words + 1));
 	if (!p)
 		return (0);
 	i = 0;

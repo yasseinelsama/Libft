@@ -6,7 +6,7 @@
 #    By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/25 13:53:10 by ymohamed          #+#    #+#              #
-#    Updated: 2022/07/28 23:35:19 by ymohamed         ###   ########.fr        #
+#    Updated: 2022/07/30 13:55:28 by ymohamed         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,14 +27,16 @@ OBJECTS = $(SOURCES:%.c=%.o)
 
 OBJECTSB = $(SOURCESB:%.c=%.o)
 
+
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
+
 all: $(NAME)
 
-$(NAME):
-	gcc -Wall -Wextra -Werror -c $(SOURCES) $(SOURCESB)
-	ar rc $(NAME) $(OBJECTS) $(OBJECTSB)
+$(NAME): $(OBJECTS)
+	ar rc $(NAME) $(OBJECTS) 
 	
-bonus:
-	gcc -Wall -Wextra -Werror -c $(SOURCESB)
+bonus: $(OBJECTSB)
 	ar rc $(NAME) $(OBJECTSB)
 
 clean:

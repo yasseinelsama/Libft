@@ -6,7 +6,7 @@
 /*   By: ymohamed <ymohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 13:52:56 by ymohamed          #+#    #+#             */
-/*   Updated: 2022/07/30 04:02:13 by ymohamed         ###   ########.fr       */
+/*   Updated: 2022/07/30 14:44:17 by ymohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,16 @@ char	*ft_substr(char const *s, size_t start, size_t len)
 
 	if (!s)
 		return (0);
+	if (start > ft_strlen(s))
+	{
+		p = ft_strdup("");
+		if (p == NULL)
+			return (NULL);
+		else
+			return (p);
+	}
+	if (len > ft_strlen(&s[start]))
+		len = ft_strlen(&s[start]);
 	p = malloc(sizeof(char) * (len + 1));
 	if (p == 0)
 		return (0);
