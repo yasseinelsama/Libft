@@ -35,6 +35,8 @@ int	ft_atoi(const char *str)
 			sn = sn * -1;
 		i++;
 	}
+	if (ptr[i] == '0')
+		i++;
 	calcu(&nb, &md, &i, ptr);
 	if (md > 19 && sn < 0)
 		return (0);
